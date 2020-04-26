@@ -1,3 +1,5 @@
+// Queues
+
 class Queue {
     constructor() {
         this.data = [];
@@ -18,22 +20,6 @@ class Queue {
     }
 }
 
-class Stack {
-    constructor() {
-        this.data = [];
-    }
-
-    push(record) {
-        this.data.push(record);
-    }
-
-    pop(){
-        return this.data.pop();
-    }
-}
-
-// Wave function for 2 arrays
-
 function wave(sourceOne, sourceTwo){
     const q = new Queue();
 
@@ -46,6 +32,22 @@ function wave(sourceOne, sourceTwo){
         }
     }
     return q;
+}
+
+// Stacks
+
+class Stack {
+    constructor() {
+        this.data = [];
+    }
+
+    push(record) {
+        this.data.push(record);
+    }
+
+    pop(){
+        return this.data.pop();
+    }
 }
 
 
